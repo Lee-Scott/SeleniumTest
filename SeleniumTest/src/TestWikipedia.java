@@ -1,9 +1,13 @@
+import java.io.File;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
+import com.sun.jna.platform.FileUtils;
 
 public class TestWikipedia {
 	/*
@@ -18,6 +22,7 @@ public class TestWikipedia {
 		
 		public static void main(String[] args) throws InterruptedException {
 			
+		
 			
 			//Path to wedriver for chrome must be downloaded 
 			//https://sites.google.com/a/chromium.org/chromedriver/downloads
@@ -52,12 +57,16 @@ public class TestWikipedia {
 			
 			System.out.println(bodyText);
 			
-			
+		
 			Thread.sleep(50000);
 			
-			//driver.quit();
+			driver.quit();
+		}
+		 
+		  
 		}
 }
+		
 			
 			
 			
